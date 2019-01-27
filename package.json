@@ -1,0 +1,16 @@
+{
+  "name": "deck",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/UDLT/deck",
+  "author": "mmacedo <bar4ka@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "mdx-deck": "^1.8.2",
+    "video-react": "^0.13.2"
+  },
+  "scripts": {
+    "start": "mdx-deck index.mdx",
+    "now-build": "mdx-deck build index.mdx"
+  }  
+}
