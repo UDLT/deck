@@ -11,6 +11,10 @@
   },
   "scripts": {
     "start": "mdx-deck index.mdx",
-    "now-build": "mdx-deck build index.mdx"
-  }  
+    "build": "mdx-deck build index.mdx",
+    "now-build": "yarn build && cpx 'assets/**/*' dist/assets/"
+  },
+  "devDependencies": {
+    "cpx": "^1.5.0"
+  }
 }
