@@ -1,4 +1,26 @@
+export { default as theme } from './theme'
+
 # UDLT - Universal Distributed Ledger Technology
+
+---
+
+## Proposal in images
+
+Transforms this
+
+![](assets/monolith.gif)
+
+---
+
+Designed like 
+
+![](assets/USB_hub.jpg)
+
+---
+
+Into
+
+![](assets/35698.jpg)
 
 ---
 
@@ -17,36 +39,56 @@
 
 * Well defined Abstractions for modular development, Hot pluggability, and extension mechanisms
 
-* Extensive encoding mechanisms for multi-address types using extensive solutions for Asynchronous Cryptographic Keys with planned support for:
+* Extensible encoding mechanism for multi-address types using solutions for Asynchronous Cryptographic Keys not limited to:
     1. Bitcoin's secp256k1 
     2. BLS12-381 (Barreto-Lynn-Scott)
-    3. Post Quantum Supersingular Isogeny Diffie-Hellman
+    3. Post Quantum Supersingular Isogeny Diffie-Hellman (SIDH)
     4. X.509 (e-CPF / e-CNPJ / others)
+
+---
+
+## UDLT Solution's:
 
 * Pluggable Consensus with native Hybrid Proof of Stake + Proof of QoS
 
 * Network DDOS protection with configurable dynamic Proof of Work
 
-* Multiple, Pluggable and extensive support for virtual machines and serverless computing
+* Multiple, Pluggable and extensible support for virtual machines and serverless computing
 
 * Support for off-chain interactive contracts with on chain settlement
 
 ---
 
-### Product presentation
+import { FullScreenCode } from 'mdx-deck/layouts'
+
+## Product presentation
 
 This is a work in progress MVP and currently features no front-end, the backend node implementation already features:
 
-* Post Quantum Supersingular Isogeny Diffie-Hellman
+---
 
-![SIDH](/assets/sidh_tests.svg)
+* Post Quantum Supersingular Isogeny Diffie-Hellman Keys
 
-#### Network bootstrap test
+Test cases:
 
+![SIDH](assets/sidh.gif)
 
+---
+
+* Json RPC and Basic Wallet 
+
+Manual tests with curl:
+
+![jsonrpc](assets/jsonrpc.gif)
+
+---
+
+## Network
+
+Network bootstrap
 
 import { Player } from 'video-react'
 
 <Player>
-      <source src="/assets/network.mp4" />
+      <source src="assets/network.mp4" />
 </Player>
